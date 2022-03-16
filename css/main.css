@@ -1,0 +1,83 @@
+@use "./buttons";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  background-color: #fff;
+  padding-bottom: 0.5em;
+  font-family: "Cormorant", serif;
+}
+
+.main-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main-section img {
+  right: 0;
+  top: 3.7rem;
+  width: 100%;
+}
+
+.info-section {
+  text-align: center;
+  color: white;
+  background-color: #242423;
+  padding: 3.2rem;
+  position: absolute;
+  bottom: 9rem;
+  right: 0;
+  left: 0;
+}
+
+.info-section .section-top {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.info-section .sub-section,
+.info-section .section-bottom {
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+.info-section .empty {
+  border-top: 1px solid #fff;
+  margin: 1rem;
+  width: 3rem;
+  margin: 0 auto;
+}
+
+.dark-theme {
+  background-color: #242423;
+}
+
+.light-mode {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .section-top {
+    margin: 1rem;
+    font-size: 7rem;
+  }
+  .empty {
+    width: 10rem;
+  }
+  img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 120vh;
+  }
+}
